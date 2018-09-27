@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 40 40">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-Artboard_2);
+      }
+
+      .cls-2 {
+        fill: #fff;
+        font-size: 19px;
+        font-family: DINPro-Black, DINPro;
+        font-weight: 800;
+      }
+
+      .cls-3, .cls-5 {
+        fill: none;
+      }
+
+      .cls-3 {
+        stroke: #fff;
+        stroke-width: 3px;
+      }
+
+      .cls-4 {
+        stroke: none;
+      }
+    </style>
+    <clipPath id="clip-Artboard_2">
+      <rect width="40" height="40"/>
+    </clipPath>
+  </defs>
+  <g id="Artboard_2" data-name="Artboard – 2" class="cls-1">
+    <g id="Group_63" data-name="Group 63" transform="translate(-15 -9)">
+      <text id="CS" class="cls-2" transform="translate(23.454 35.67)"><tspan x="0" y="0">CS</tspan></text>
+      <g id="Rectangle_10" data-name="Rectangle 10" class="cls-3" transform="translate(16.965 10.965)">
+        <rect class="cls-4" width="36.07" height="36.07"/>
+        <rect class="cls-5" x="1.5" y="1.5" width="33.07" height="33.07"/>
+      </g>
+    </g>
+  </g>
+</svg>

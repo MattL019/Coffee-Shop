@@ -1,29 +1,49 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+
+    <TheHeader/>
+
+    <transition mode='out-in' name='route' enter-active-class='animated fadeIn faster' leave-active-class="animated fadeOut faster">
+      <router-view/>
+    </transition>
+
   </div>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-#nav {
-  padding: 30px;
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-    &.router-link-exact-active {
-      color: #42b983;
-    }
+<script>
+
+// Components
+import TheHeader from '@/components/TheHeader.vue';
+
+export default {
+  components: {
+    TheHeader
   }
 }
+</script>
+
+
+<style lang="scss">
+
+@import './styles/normalize.css';
+@import './styles/vars.scss';
+@import './styles/animate.css';
+
+* {
+  box-sizing:border-box;
+  font-family:$fnt;
+}
+
+#app {
+  min-height:100vh;
+  background-image:
+    radial-gradient(rgba(black,.8), rgba($blk,.8)),
+    url('./assets/bg.jpg');
+
+  background-position:center center;
+  background-size:cover;
+  background-repeat:no-repeat;
+}
+
+
 </style>
